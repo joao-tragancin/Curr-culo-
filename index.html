@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Currículo digital de João Vitor Tragancin, estudante de Ciência da Computação e profissional de T.I.">
+  <title>João Vitor Tragancin | Currículo Digital</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="logo" href="#inicio" aria-label="Ir para o início">AS<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button id="themeButton" class="icon-button" type="button" aria-label="Alternar tema" title="Alternar tema">☾</button>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section id="inicio" class="hero container" aria-labelledby="titulo-principal">
+      <div class="hero-copy">
+        <p class="eyebrow">Olá, eu sou</p>
+        <h1 id="titulo-principal">João Vitor Tragancin<span>.</span></h1>
+        <p class="hero-text">Estudante de Ciência da Computação e profissional de T.I. interessado em criar soluções que conectam software, automação e necessidades reais.</p>
+        <p id="personalGreeting" class="personal-greeting" aria-live="polite"></p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projetos">Ver projetos</a>
+          <button id="welcomeButton" class="button secondary" type="button">Dizer olá</button>
+        </div>
+      </div>
+
+      <figure class="profile-card">
+        <div class="image-frame">
+          <img src="../assets/branding/laserplate_source.png" alt="Símbolo gráfico azul representando tecnologia e criatividade" width="520" height="520">
+        </div>
+        <figcaption>Uma identidade visual inspirada em tecnologia, precisão e criatividade.</figcaption>
+      </figure>
+    </section>
+
+    <section id="sobre" class="section container" aria-labelledby="sobre-titulo">
+      <div class="section-heading">
+        <p class="eyebrow">01 — Perfil</p>
+        <h2 id="sobre-titulo">Sobre mim</h2>
+      </div>
+      <div class="about-grid">
+        <article class="about-copy card">
+          <h3>Aprender, criar e evoluir</h3>
+          <p>Sou estudante de Ciência da Computação e gosto de resolver problemas por meio da tecnologia. Tenho conhecimentos em HTML, CSS, JavaScript, Python e C#.</p>
+          <p>Meu objetivo é atuar na área de T.I., desenvolver soluções úteis e continuar evoluindo profissionalmente por meio de projetos práticos.</p>
+        </article>
+        <article class="facts card" aria-labelledby="fatos-titulo">
+          <h3 id="fatos-titulo">Informações rápidas</h3>
+          <ul>
+            <li><strong>Localização:</strong> Tangará, Santa Catarina</li>
+            <li><strong>Formação:</strong> Ciência da Computação</li>
+            <li><strong>Interesse:</strong> Tecnologia da Informação</li>
+            <li><strong>Disponibilidade:</strong> Novos projetos</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="habilidades" class="section section-alt" aria-labelledby="habilidades-titulo">
+      <div class="container">
+        <div class="section-heading row-heading">
+          <div>
+            <p class="eyebrow">02 — Conhecimentos</p>
+            <h2 id="habilidades-titulo">Minhas habilidades</h2>
+          </div>
+          <button id="toggleSkills" class="text-button" type="button" aria-expanded="true" aria-controls="skillsContent">Ocultar detalhes</button>
+        </div>
+        <div id="skillsContent" class="skills-layout">
+          <article class="skills-list card">
+            <h3>Tecnologias em estudo</h3>
+            <ul>
+              <li><span>HTML</span><strong>85%</strong></li>
+              <li><span>CSS</span><strong>80%</strong></li>
+              <li><span>JavaScript</span><strong>70%</strong></li>
+              <li><span>Python</span><strong>75%</strong></li>
+              <li><span>C#</span><strong>65%</strong></li>
+            </ul>
+          </article>
+          <article class="canvas-card card">
+            <h3>Visão das habilidades</h3>
+            <p>Gráfico decorativo criado dinamicamente com JavaScript.</p>
+            <canvas id="skillsCanvas" width="420" height="310" role="img" aria-label="Gráfico de barras das habilidades em HTML, CSS, JavaScript, Python e C#"></canvas>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="section container" aria-labelledby="projetos-titulo">
+      <div class="section-heading">
+        <p class="eyebrow">03 — Prática</p>
+        <h2 id="projetos-titulo">Projetos recentes</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card card">
+          <span class="project-number">01</span>
+          <h3>LaserPlateStudio</h3>
+          <p>Programa para conversão e edição de modelos DWG em modelos DXF, preparados para utilização em máquinas de corte e gravação a laser.</p>
+          <ul class="tags" aria-label="Tecnologias e áreas do projeto"><li>Python</li><li>Automação</li><li>DWG</li><li>DXF</li></ul>
+        </article>
+        <article class="project-card card">
+          <span class="project-number">02</span>
+          <h3>Currículo Digital</h3>
+          <p>Página responsiva e acessível criada com HTML, CSS e JavaScript puro.</p>
+          <ul class="tags" aria-label="Tecnologias do projeto"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+        </article>
+        <article class="project-card card">
+          <span class="project-number">03</span>
+          <h3>Sistema de Motores</h3>
+          <p>Sistema em desenvolvimento voltado à organização e ao gerenciamento de informações de motores elétricos.</p>
+          <ul class="tags" aria-label="Status e área do projeto"><li>Em desenvolvimento</li><li>Sistema</li><li>Motores</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato" class="section contact-section" aria-labelledby="contato-titulo">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">04 — Contato</p>
+          <h2 id="contato-titulo">Vamos conversar?</h2>
+          <p>Digite seu nome para receber uma saudação personalizada no topo da página.</p>
+          <address class="social-links">
+            <a href="mailto:joao.tragancin@unoesc.edu.br">joao.tragancin@unoesc.edu.br</a>
+            <span>LinkedIn: João Tragancin</span>
+            <a href="https://github.com/joao-tragancin" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          </address>
+        </div>
+        <form id="greetingForm" class="contact-form card">
+          <label for="visitorName">Como você se chama?</label>
+          <div class="input-row">
+            <input id="visitorName" name="visitorName" type="text" placeholder="Digite seu nome" autocomplete="name" required maxlength="40">
+            <button class="button primary" type="submit">Enviar</button>
+          </div>
+          <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>Desenvolvido por João Vitor Tragancin com HTML, CSS e JavaScript.</p>
+      <p>© <span id="currentYear"></span> — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
